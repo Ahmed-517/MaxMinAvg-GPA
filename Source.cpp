@@ -2,14 +2,23 @@
 
 using namespace std;
 
+// The Main Function
 int main() {
 
 	cout << "\t\t--------------------\n\t\tGPA of N of students\n\t\t--------------------" << endl;
 	cout << "\t\tEnter Number Of Students: ";
-	int numOfSt;
+
+	/*
+		Define
+		Reference Variables
+	*/
 	int max = 0;
 	double min = 9999999999999999999;
+
+	// Get Number of Students
+	int numOfSt;
 	cin >> numOfSt;
+
 	int sum = 0, x;
 		cout << "\n\t\tGPA Of " << numOfSt << " Students" << endl;
 	for (int i = 1; i <= numOfSt; i++) {
@@ -32,7 +41,7 @@ int main() {
 
 	cout << "\n\t\tEnter Y if you want to run the code again\n\t\tAny Thing Else To Exit" << endl;
 	char press;
-	cout << "\t\t\t-->";
+	cout << "\t\t\t--> ";
 	cin >> press;
 	switch (press){
 	case 'y' :
@@ -45,6 +54,7 @@ int main() {
 		main();
 		break;
 	default :
-		cout << "Exiting Code.......";
+		cout << "Exiting Code......." << endl;
+		cout << "Name: Ahmed Gamal Goda";
 	}
 }
