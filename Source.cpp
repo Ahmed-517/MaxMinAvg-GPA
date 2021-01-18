@@ -19,7 +19,7 @@ int main() {
 	int numOfSt;
 	cin >> numOfSt;
 
-	int sum = 0, x;
+	float sum = 0, x;
 		cout << "\n\t\tGPA Of " << numOfSt << " Students" << endl;
 	for (int i = 1; i <= numOfSt; i++) {
 		cout << "\t\tStudent Number " << i << ": ";
@@ -36,7 +36,7 @@ int main() {
 	cout << "\n\t\t***********************";
 	cout << "\n\t\t*      Max GPA is " << max;
 	cout << "\n\t\t*  Average GPA is " << sum / numOfSt;
-	cout << "\n\t\t*     Min GPA is " << min;
+	cout << "\n\t\t*      Min GPA is " << min;
 	cout << "\n\t\t***********************";
 
 	cout << "\n\t\tEnter Y if you want to run the code again\n\t\tAny Thing Else To Exit" << endl;
