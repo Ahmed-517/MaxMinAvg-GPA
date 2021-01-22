@@ -5,7 +5,11 @@ using namespace std;
 // The Main Function
 int main() {
 
-	cout << "\t\t--------------------\n\t\tGPA of N of students\n\t\t--------------------" << endl;
+	string line = "\t\t--------------------";
+	string tabs = "\n\t\t";
+
+	cout << line << tabs << "GPA of N of students\n" << line << endl;
+
 	cout << "\t\tEnter Number Of Students: ";
 
 	/*
@@ -13,31 +17,41 @@ int main() {
 		Reference Variables
 	*/
 	int max = 0;
-	double min = 9999999999999999999;
+	int min = 4;
 
 	// Get Number of Students
 	int numOfSt;
 	cin >> numOfSt;
 
 	float sum = 0, x;
-		cout << "\n\t\tGPA Of " << numOfSt << " Students" << endl;
+	int totalNum = numOfSt;
+
+	cout << "\n\t\tGPA Of " << numOfSt << " Students" << endl;
+
 	for (int i = 1; i <= numOfSt; i++) {
 		cout << "\t\tStudent Number " << i << ": ";
 		cin >> x;
-		sum += x;
-
-		if (x > max) {
-			max = x;
+		
+		if (x <= 4 && x >= 0) {
+			sum += x;
+			if (x > max)
+				max = x;
+			if (x < min)
+				min = x;
 		}
-		if (x < min) {
-			min = x;
+		else {
+			cout << tabs << " [* GPA is from 0 to 4]\n" << endl;;
+			i--;
 		}
 	}
-	cout << "\n\t\t***********************";
-	cout << "\n\t\t*      Max GPA is " << max;
-	cout << "\n\t\t*  Average GPA is " << sum / numOfSt;
-	cout << "\n\t\t*      Min GPA is " << min;
-	cout << "\n\t\t***********************";
+
+	// Results
+	cout << tabs << "*************************************";
+	cout << tabs << "*      Max GPA for " << numOfSt << " Students is " << max;
+	cout << tabs << "*  Average GPA for " << numOfSt << " Students is " << sum / numOfSt;
+	cout << tabs << "*      Min GPA for " << numOfSt << " Students is " << min;
+	cout << tabs << "*************************************";
+
 
 	cout << "\n\t\tEnter Y if you want to run the code again\n\t\tAny Thing Else To Exit" << endl;
 	char press;
