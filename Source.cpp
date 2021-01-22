@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -22,6 +23,10 @@ int main() {
 	// Get Number of Students
 	int numOfSt;
 	cin >> numOfSt;
+	if (numOfSt <= 0) {
+		cout << tabs << "\aPlease Enter A Valid Student Number\n" << endl;
+		main();
+	}
 
 	float sum = 0, x;
 	int totalNum = numOfSt;
@@ -40,7 +45,7 @@ int main() {
 				min = x;
 		}
 		else {
-			cout << tabs << " [* GPA is from 0 to 4]\n" << endl;;
+			cout << tabs << "\a [* GPA is from 0 to 4]\n" << endl;;
 			i--;
 		}
 	}

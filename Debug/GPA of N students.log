@@ -1,4 +1,4 @@
 ﻿  Source.cpp
-C:\Users\Ahmed\source\repos\GPA of N students\Source.cpp(38,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Ahmed\source\repos\GPA of N students\Source.cpp(40,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ahmed\source\repos\GPA of N students\Source.cpp(43,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ahmed\source\repos\GPA of N students\Source.cpp(45,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   GPA of N students.vcxproj -> C:\Users\Ahmed\source\repos\GPA of N students\Debug\GPA of N students.exe
